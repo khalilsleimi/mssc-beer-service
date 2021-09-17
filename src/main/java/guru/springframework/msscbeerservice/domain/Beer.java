@@ -1,6 +1,6 @@
 package guru.springframework.msscbeerservice.domain;
 
-import lombok.Data;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -14,7 +14,11 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.UUID;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
 public class Beer {
 
